@@ -1,0 +1,49 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\graphicspath{{./images/}}
+\usepackage{wrapfig}
+\usepackage[table]{xcolor}
+\usepackage{caption}
+\usepackage{scalerel}
+\usepackage{epigraph}
+\usepackage[export]{adjustbox}
+\usepackage{subcaption}
+\usepackage{pgf-pie}
+\usepackage[a4paper, width=150mm, top=25mm, bottom=25mm]{geometry}
+
+
+\begin{document}
+\input{titlepage.tex}
+  
+\tableofcontents
+\newpage
+\section{Introduction} 
+\subsection{Abstract}
+\epigraph{Since we’re all rich with Bitcoins … we ought to put some of this unearned wealth to good use}{\textit{Hal Finney}}
+\input{abstract.tex}
+\subsection{Project tasks and objectives}
+\input{tasks.tex}
+\section{Theory}
+\subsection{Key terms and definitions}
+\input{theory.tex}
+
+\section{Project Implementation}
+\subsection{Selected models}
+\input{selmodels.tex}
+\subsection{Data}
+\input{data.tex}
+\subsection{Quality metrics}
+\input{metrics.tex}
+\subsection{Technologies and Instruments}
+\input{instruments.tex}
+\section{Conclusion}
+\input{conclusion.tex}
+\section{List of references}
+\input{references.tex}
+
+\input{pie.tex}
+
+\end{document}
+
+

@@ -1,0 +1,31 @@
+This research is based on four forecasting models: ARMA, ARIMA, ARIMAX, Prophet (Facebook Inc.).\\ 
+Autoregressive model (AR(p)) - a time series model, where previous-step observations are an input data for regression model predicting value on the next time period. AR(p) is an autoregression model of order p:
+\begin{equation}\label{eq:AR}
+y_i = c + \sum_{i=1}^{p}\varphi_i y_{t-1} + \varepsilon_t 
+    \end{equation}
+
+Moving Average model (MA(q)) - a time series model, where previous-step noise components are an input data for regression model predicting value on the next time period. MA(q) is a moving-average model of order q:
+\begin{equation}\label{eq:MA}
+y_i = c + \sum_{i=1}^{q}\theta_i y_{t-1} + \varepsilon_t 
+    \end{equation}
+
+The basic elements of AR and MA models can be combined to produce a great variety of models. 
+ARMA (Autoregressive Moving Average) model used to describe slightly stationary time series in terms of two polynomials, one of them is moving average, second- autoregression. ARMA(p, q) is a sum of autoregression model of order p and moving-average model of order q:
+\begin{equation}\label{eq:ARMA}
+y_i = c +\varepsilon_t +\sum_{i=1}^{p}\phi_i y_{i-t} +\sum_{i=1}^{q}\theta_i \varepsilon_{t-i}
+    \end{equation}
+
+If non-stationarity is added to a mixed ARMA model, then the general ARIMA model is obtained. ARIMA (Autoregressive Integrated Moving Average) uses previous time series data plus an error to forecast future values on non-stationary data. ARIMA (p, d, q) is a differentiated d times ARMA model:
+\begin{equation}\label{eq:ARIMA}
+\triangle^{D} y_{t} = \alpha +\varepsilon_t + \sum_{i=1}^{p}\phi_i \triangle^{D} y_{t-i} + \sum_{j=1}^{q}\theta_i \varepsilon_{t-j}
+\end{equation}
+
+An extended version of the ARIMA model is the ARIMAX (Autoregressive Integrated Moving Average Extended). It includes also other independent (predictor) variables. X- exogenous factor. This model allows to take advantage of autocorrelation that may be present in residuals of the regression to improve the accuracy of a forecast. ARIMAX (p, d, q) refers to differentiated d times ARMA model with exogenous data Xt:
+\begin{equation}\label{eq:ARIMAX}
+\triangle^{D} y_{t} =  \sum_{i=1}^{p}\phi_i \triangle^{D} y_{t-i} + \sum_{j=1}^{q}\theta_i \varepsilon_{t-j} + \sum_{m=1}^{M}\beta_m X_m, t + \varepsilon_t 
+\end{equation}
+Prophet model is based on an additive model where non-linear trends are fit with yearly, weekly, and daily seasonality, plus holiday effects. The algorithm of this model and the installation methods are described on Prophet website\footnote{https://facebook.github.io/prophet/}. This model is extremely useful with depending on season time series. Prophet can be considered as a non-linear regression model of the form:
+\begin{equation}\label{eq:ARIMAX}
+y_{t}= g(t)+s(t)+h(t)+\varepsilon_{t} ,
+\end{equation}
+where g(t) describes a growth term, s(t) describes the various seasonal patterns, h(t) captures the holiday effects.
