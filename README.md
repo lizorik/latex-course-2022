@@ -1,2 +1,8 @@
 # latex-course-2022
 This repository contains .md file, presentation and document, made on Latex via Overleaf by Elizaveta K.
+
+The Latex course has been completed, the story of the work done will be described in this report.
+The very first and potential acquaintance with Latex began in those moments when my classmates told me that almost all homework was written in it. Then I thought how cool it is to do such neat and clear homework. Then I began to notice that not only students use such a wonderful platform, but also teachers - whether it's a simple homework or a test, a syllabus or a presentation. Interest in how all the same work is done, on the trick of which high-quality and accurate documents and presentations in PDF format are obtained, prompted me to choose this mini-course in the summer. The mini-course is called "".
+In this part of the report, I will describe the main points and tips on how to work with this platform for beginners in order to understand all the details and features.
+To begin with, I recommend starting by exploring the Overleaf website. This is a fairly high-quality platform for working with and studying all the features of Latex. It includes fourteen different modules, for example: LaTeX Basics, Mathematics, Figures and tables, Presentations, Field specific and so on. Moreover, there is even an opportunity to get acquainted with Latex in 30 minutes.
+After getting acquainted with this platform, I suggest starting a practice, namely, creating some kind of official document, for example: a scientific article, a project report or an article. Why an official document? Because the creation of such a document covers most of the main functions of LaTeX. Precisely speaking, 
